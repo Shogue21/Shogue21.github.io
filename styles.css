@@ -1,12 +1,20 @@
 #header {
   background-color: #7092be;
+  font-family: "Bookman Old Style", "Times New Roman";
 }
+
+#body {
+  font-family: "Bookman Old Style", "Times New Roman";
+}
+
 .dropdown a {
   color: black !important;
 }
+
 .grid-container {
   display: grid;
-  grid-template-rows: 10;
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-template-columns: repeat(auto-fill, auto);
 }
 
 .grid-item {
@@ -57,7 +65,7 @@
 }
 
 .bItem4 {
-  grid-column: 2 / 10;
+  grid-column: 1 / 10;
   grid-row: 10;
   background: #c3c3c3;
   font-size: 15px;
@@ -67,4 +75,23 @@
   height: auto;
   padding: 10px;
   border-radius: 50%;
+}
+
+#about-me {
+  border-bottom: 4px solid black;
+}
+
+#contact {
+  border-bottom: 4px solid black;
+}
+
+#skills {
+  border-top: 2px solid black;
+  border-bottom: 4px solid black;
+}
+
+.dropdown-divider {
+  text-align: center !important;
+  color: #7092be !important;
+  font-size: 20px !important;
 }
