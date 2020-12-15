@@ -77,13 +77,14 @@
   padding: 10px;
   border-radius: 50%;
 }
-img {
-  width: 65%;
+a > img {
+  width: 30vw;
+  padding: 15px;
   height: auto;
   object-fit: fill;
 }
 
-#projects {
+.project {
   border-top: 2px solid black;
   display: grid;
   grid-template-areas: "description image";
@@ -96,6 +97,7 @@ img {
 .pItem2 {
   grid-area: image;
   justify-self: end;
+  align-self: center;
 }
 
 #skills {
@@ -152,7 +154,7 @@ img {
     font-size: 15px;
   }
 
-  #projects {
+  .projects {
     border-top: 2px solid black;
     display: grid;
     grid-template-areas:
@@ -166,6 +168,7 @@ img {
 
   .pItem2 {
     grid-area: image;
+    align-self: center;
     justify-self: center;
   }
 }

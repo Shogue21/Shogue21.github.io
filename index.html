@@ -22,8 +22,8 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Pokemon Rock Paper Scissors</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Food Line Restaurant Application</a>
                             <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
                         </div>
                     </ul>
@@ -59,18 +59,44 @@
                 </a>
             </div>
         </div>
-        <div id="projects" class="grid-container grid-item bItem3">
-            <div id="Home" class="" aria-expanded="true">
-                <h3>Projects</h3>
-                <p>This tab will display whichever of my projects you choose from the dropdown menu above!</p>
+        <div id="projects" class="grid-container grid-item bItem3 tab-content">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <h3>Projects</h3>
+                    <p>This tab will display whichever of my projects you choose from the dropdown menu above!</p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="project">
+                        <div class="pItem1">
+                            <h3>Pokemon Rock, Paper, Scissors</h3>
+                            <p>This was my first unit project for Python. I made this 5 weeks into the Base Camp Coding Academy program and ended up being very proud of it. The premise of the game is rock, paper, scissors, but with a twist. Instead of the normal elements, the options are instead types from Pokemon.</p>
+                            <p>Then, both the player and the cpu start with 100 health total and lose 20 health each time they lose. There is also a system of critical hits and misses. If you get a critical hit, it does double damage. If you miss, it does 0 damage. Finally, I created a GUI using Tkinter for this game, which I was very proud of. This can be see in the image on the right.</p>
+                        </div>
+                        <a class="pItem2" href="https://github.com/Shogue21/Pokemon-Rock-Paper-Scissors" target="_blank">
+                            <img src="Images/TKFightExample.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="project">
+                        <div class="pItem1">
+                            <h3>Food Line Restaurant Application</h3>
+                            <p>This was my second unit project for Python. The goal of this app was to design an app that makes use of everything we had learned up to that point. What this app, which we named "Food Line", did is that it allowed users to place orders for Reservation, Carry-out, and Delivery to the two restaurants supported. We wanted to explore an idea that we haven't seen much of in the real world, which is the idea of ordering your food for dine-in ahead of time.</p>
+                            <p>While it didn't ACTUALLY allow you to order from restaurants, it went through the process of it. In the situations where a user makes a reservation, it would ask you your name, party size, date and time you were reserving for, and then allowed you to order your food ahead.</p>
+                            <p>Food Line also allowed the staff of the restaurant to update the menus, view reservations/orders, and set the availability of reservations.</p>
+                        </div>
+                        <a class="pItem2" href="https://github.com/Shogue21/Food-Line-Restaurant-Application" target="_blank">
+                            <img src="Images/FoodLine.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+              </div>
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             </div>
-            <div id="PokemonRPS" class="pItem1" aria-expanded="false">
-                <h3>Pokemon Rock, Paper, Scissors</h3>
-                <p>This was my first unit project for Python. I made this 5 weeks into the Base Camp Coding Academy program and ended up being very proud of it. The premise of the game is rock, paper, scissors, but with a twist. Instead of the normal elements, the options are instead types from Pokemon.</p>
-                <p>Then, both the player and the cpu start with 100 health total and lose 20 health each time they lose. There is also a system of critical hits and misses. If you get a critical hit, it does double damage. If you miss, it does 0 damage. Finally, I created a GUI using Tkinter for this game, which I was very proud of. This can be see in the image on the right.</p>
+            <div class="tab-pane" id="pokemonrps" role="tabpanel" aria-labelledby="v-pills-pokemonrps-tab">
             </div>
-                <img class="pItem2" src="Images/TKFightExample.png"/>
-        </div>
+            </div>
         <div class="grid-item bItem4">
             <h3 id="about-me">About Me</h3>
             <p>Hey, my name is Seth Hogue. I am currently enrolled in Base Camp Coding Academy where I am learning to become a full-stack developer I’ve known since I was a kid that my dream was to work in the technology field, but I never knew what exactly I wanted to do. Base Camp has allowed me to realize my dream of becoming a software developer. I love coming up with creative ways to solve problems and creating programs to help with whatever I need. I have been excelling at learning Python and even working with Go on the side. Coding is my passion and I’m hoping that I can pursue a career as a software developer.</p>
