@@ -57,6 +57,7 @@
 .bItem2 {
   grid-area: contact;
   background: #c3c3c3;
+  padding: 20px;
 }
 
 .bItem3 {
@@ -77,9 +78,9 @@
   border-radius: 50%;
 }
 img {
-  width: 35%;
+  width: 65%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 #projects {
@@ -90,13 +91,11 @@ img {
 
 .pItem1 {
   grid-area: description;
-  justify-self: center;
-  border: 5px solid black;
 }
 
 .pItem2 {
   grid-area: image;
-  border: 5px solid black;
+  justify-self: end;
 }
 
 #skills {
@@ -108,4 +107,65 @@ img {
   text-align: center !important;
   color: #7092be !important;
   font-size: 20px !important;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    background-color: #7092be;
+    font-family: "Bookman Old Style", "Times New Roman";
+  }
+
+  #body {
+    font-family: "Bookman Old Style", "Times New Roman";
+    display: grid;
+    grid-template-areas:
+      "project project"
+      "skills skills"
+      "about-me about-me"
+      "contact contact";
+  }
+  .bItem1 {
+    grid-area: skills;
+    background: #c3c3c3;
+    align-items: center;
+  }
+
+  .bItem2 {
+    grid-area: contact;
+    background: #c3c3c3;
+  }
+
+  .bItem3 {
+    grid-area: project;
+    background: white;
+  }
+
+  .bItem4 {
+    grid-area: about-me;
+    background: #c3c3c3;
+    font-size: 15px;
+  }
+
+  #projects {
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-areas:
+      "description"
+      "image";
+  }
+
+  .pItem1 {
+    grid-area: description;
+  }
+
+  .pItem2 {
+    grid-area: image;
+    justify-self: center;
+  }
 }

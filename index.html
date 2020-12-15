@@ -15,21 +15,19 @@
                 <h1>Seth Hogue</h1>
             </div>
             <div class="grid-item item3">
-                <ul class="nav nav-pills">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
-                        <ul class="dropdown-menu">
-                        <li><hr class="dropdown-divider">Python</li>
-                        <li><a class="dropdown-item" href="#">Restaurant Application</a></li>
-                        <li><a class="dropdown-item" href="#">Pokemon RPS</a></li>
-                        <li><hr class="dropdown-divider">Go</li>
-                        <li><a class="dropdown-item" href="#">Go Bookstore</a></li>
-                        <li><hr class="dropdown-divider">HTML/CSS</li>
-                        <li><a class="dropdown-item" href="#">Fictional Charity</a></li>
-                        <li><a class="dropdown-item" href="#">Go Technical Documentation</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                        </div>
+                    </ul>
+                  </div>
             </div>
         </div>
 </head>
@@ -48,15 +46,30 @@
             <h3 id="contact">Contact Me</h3>
             <p>Email: sethhogue5@gmail.com</p>
             <p>Phone: 901-871-6838</p>
+            <div id="buttons">
+                <a class="button" href="https://github.com/Shogue21" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+                <a class="button" href="https://www.linkedin.com/in/seth-hogue-411773198/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212h-2.4s.03-6.547 0-7.225h2.4v1.023a5.54 5.54 0 0 0-.016.025h.016v-.025c.32-.493.89-1.193 2.165-1.193 1.58 0 2.764 1.033 2.764 3.252v4.143h-2.4V9.529c0-.972-.348-1.634-1.217-1.634-.664 0-1.059.447-1.233.878-.063.154-.079.37-.079.586v4.035z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         <div id="projects" class="grid-container grid-item bItem3">
-            <div class="pItem1">
-                <h3>Project Name</h3>
-                <p>Project Description</p>
+            <div id="Home" class="" aria-expanded="true">
+                <h3>Projects</h3>
+                <p>This tab will display whichever of my projects you choose from the dropdown menu above!</p>
             </div>
-            <div class="pItem2">
-                <img src="Images/TKFightExample.png"/>
+            <div id="PokemonRPS" class="pItem1" aria-expanded="false">
+                <h3>Pokemon Rock, Paper, Scissors</h3>
+                <p>This was my first unit project for Python. I made this 5 weeks into the Base Camp Coding Academy program and ended up being very proud of it. The premise of the game is rock, paper, scissors, but with a twist. Instead of the normal elements, the options are instead types from Pokemon.</p>
+                <p>Then, both the player and the cpu start with 100 health total and lose 20 health each time they lose. There is also a system of critical hits and misses. If you get a critical hit, it does double damage. If you miss, it does 0 damage. Finally, I created a GUI using Tkinter for this game, which I was very proud of. This can be see in the image on the right.</p>
             </div>
+                <img class="pItem2" src="Images/TKFightExample.png"/>
         </div>
         <div class="grid-item bItem4">
             <h3 id="about-me">About Me</h3>
