@@ -161,13 +161,13 @@ a > img {
   }
   .bItem1 {
     grid-area: skills;
-    background: #c3c3c3;
+    background: #d7dde8;
     align-items: center;
   }
 
   .bItem2 {
     grid-area: contact;
-    background: #c3c3c3;
+    background: #d7dde8;
   }
 
   .bItem3 {
@@ -177,7 +177,7 @@ a > img {
 
   .bItem4 {
     grid-area: about-me;
-    background: #c3c3c3;
+    background: #d7dde8;
     font-size: 15px;
   }
 
