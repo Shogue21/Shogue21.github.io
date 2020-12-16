@@ -1,6 +1,26 @@
 #header {
-  background-color: #7092be;
+  background: #667db6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: "Bookman Old Style", "Times New Roman";
+}
+
+#name {
+  font-weight: bold;
+  font-style: italic;
 }
 
 #body {
@@ -10,6 +30,11 @@
     "skills project"
     "contact project"
     "contact about-me";
+}
+
+.btn-color {
+  background-color: #d7dde8 !important;
+  color: black !important;
 }
 
 .dropdown a {
@@ -50,13 +75,13 @@
 
 .bItem1 {
   grid-area: skills;
-  background: #c3c3c3;
+  background: #d7dde8;
   align-items: center;
 }
 
 .bItem2 {
   grid-area: contact;
-  background: #c3c3c3;
+  background: #d7dde8;
   padding: 20px;
 }
 
@@ -67,7 +92,7 @@
 
 .bItem4 {
   grid-area: about-me;
-  background: #c3c3c3;
+  background: #d7dde8;
   font-size: 15px;
 }
 
