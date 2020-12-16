@@ -98,6 +98,7 @@ a > img {
   grid-area: image;
   justify-self: end;
   align-self: center;
+  position: sticky;
 }
 
 #skills {
@@ -154,7 +155,7 @@ a > img {
     font-size: 15px;
   }
 
-  .projects {
+  .project {
     border-top: 2px solid black;
     display: grid;
     grid-template-areas:
@@ -170,5 +171,8 @@ a > img {
     grid-area: image;
     align-self: center;
     justify-self: center;
+  }
+  a > img {
+    width: 100%;
   }
 }
