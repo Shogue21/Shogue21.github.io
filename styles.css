@@ -181,3 +181,28 @@ a > img {
     width: 65%;
   }
 }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .project {
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-areas:
+      "description"
+      "image";
+  }
+
+  .pItem1 {
+    grid-area: description;
+    padding: 20px;
+  }
+
+  .pItem2 {
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+  }
+
+  a > img {
+    width: 100%;
+  }
+}
