@@ -23,6 +23,11 @@
   font-style: italic;
 }
 
+#tab-info {
+  justify-self: center;
+  align-self: center;
+}
+
 #body {
   font-family: "Bookman Old Style", "Times New Roman";
   display: grid;
@@ -94,6 +99,7 @@
   grid-area: about-me;
   background: #d7dde8;
   font-size: 15px;
+  padding: 20px;
 }
 
 #selfie {
@@ -159,6 +165,9 @@ a > img {
       "about-me about-me"
       "contact contact";
   }
+  #name {
+    margin-right: 20px;
+  }
   .bItem1 {
     grid-area: skills;
     background: #d7dde8;
@@ -216,6 +225,9 @@ a > img {
       "image";
   }
 
+  #name {
+    margin-right: 25px;
+  }
   .pItem1 {
     grid-area: description;
     padding: 20px;
