@@ -24,8 +24,8 @@
 }
 
 #tab-info {
-  justify-self: center;
-  align-self: center;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 #body {
@@ -35,6 +35,7 @@
     "skills project"
     "contact project"
     "contact about-me";
+  height: 75vh;
 }
 
 .btn-color {
@@ -93,6 +94,7 @@
 .bItem3 {
   grid-area: project;
   background: white;
+  padding: 20px;
 }
 
 .bItem4 {
@@ -116,7 +118,6 @@ a > img {
 }
 
 .project {
-  border-top: 2px solid black;
   display: grid;
   grid-template-areas: "description image";
 }
@@ -136,6 +137,7 @@ a > img {
 #skills {
   border-top: 2px solid black;
   align-self: center;
+  padding: 10px;
 }
 
 .dropdown-divider {
@@ -165,6 +167,7 @@ a > img {
       "about-me about-me"
       "contact contact";
   }
+
   #name {
     margin-right: 20px;
   }
