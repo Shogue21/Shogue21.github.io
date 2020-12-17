@@ -9,7 +9,7 @@
     <title>Seth Hogue's Portfolio</title>
         <div id="header" class="grid-container">
             <div class="grid-item item1">
-                <img id="selfie" src="Images/selfie.png"/>
+                <a href="https://github.com/Shogue21" target="_blank"><img id="selfie" src="Images/selfie.png"/></a>
             </div>
             <div class="grid-item item2">
                 <h1 id="name">Seth Hogue</h1>
@@ -37,25 +37,28 @@
     <div id="body" class="grid-container">
         <div class="grid-item bItem1">
             <h3 id="skills">Skills</h3>
-            <ul>
-                <li>Python</li>
-                <li>Go</li>
-                <li>HTML</li>
-                <li>CSS</li>
+            <ul id="skill-list">
+                <li id="python">Python</li>
+                <li id="go">Go</li>
+                <li id="html">HTML</li>
+                <li id="css">CSS</li>
             </ul>
         </div>
         <div class="grid-item bItem2">
             <h3 id="contact">Contact Me</h3>
-            <p>Email: sethhogue5@gmail.com</p>
-            <p>Phone: 901-871-6838</p>
             <div id="buttons">
+                <a class="button" href="mailto: sethhogue5@gmail.com" target="_blank">
+                    <svg id="email" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope spacing" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                    </svg>
+                </a>
                 <a class="button" href="https://github.com/Shogue21" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                    <svg id="github" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github spacing" viewbox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                     </svg>
                 </a>
                 <a class="button" href="https://www.linkedin.com/in/seth-hogue-411773198/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewbox="0 0 16 16">
+                    <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin spacing" viewbox="0 0 16 16">
                         <path fill-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212h-2.4s.03-6.547 0-7.225h2.4v1.023a5.54 5.54 0 0 0-.016.025h.016v-.025c.32-.493.89-1.193 2.165-1.193 1.58 0 2.764 1.033 2.764 3.252v4.143h-2.4V9.529c0-.972-.348-1.634-1.217-1.634-.664 0-1.059.447-1.233.878-.063.154-.079.37-.079.586v4.035z"/>
                     </svg>
                 </a>
@@ -71,6 +74,8 @@
                     <div class="project">
                         <div class="pItem1">
                             <h3>Pokemon Rock, Paper, Scissors</h3>
+                            <h5>Completed during October 2020</h5>
+                            <h5>Language: Python</h5>
                             <p>This was my first unit project for Python. I made this 5 weeks into the Base Camp Coding Academy program and ended up being very proud of it. The premise of the game is rock, paper, scissors, but with a twist. Instead of the normal elements, the options are instead types from Pokemon.</p>
                             <p>Then, both the player and the cpu start with 100 health total and lose 20 health each time they lose. There is also a system of critical hits and misses. If you get a critical hit, it does double damage. If you miss, it does 0 damage. Finally, I created a GUI using Tkinter for this game, which I was very proud of. This can be see in the image on the right.</p>
                         </div>
@@ -83,6 +88,8 @@
                     <div class="project">
                         <div class="pItem1">
                             <h3>Food Line Restaurant Application</h3>
+                            <h5>Completed during November 2020</h5>
+                            <h5>Language: Python</h5>
                             <p>This was my second unit project for Python. The goal of this app was to design an app that makes use of everything we had learned up to that point. What this app, which we named "Food Line", did is that it allowed users to place orders for Reservation, Carry-out, and Delivery to the two restaurants supported. We wanted to explore an idea that we haven't seen much of in the real world, which is the idea of ordering your food for dine-in ahead of time.</p>
                             <p>While it didn't ACTUALLY allow you to order from restaurants, it went through the process of it. In the situations where a user makes a reservation, it would ask you your name, party size, date and time you were reserving for, and then allowed you to order your food ahead.</p>
                             <p>Food Line also allowed the staff of the restaurant to update the menus, view reservations/orders, and set the availability of reservations.</p>
@@ -96,6 +103,8 @@
                     <div class="project">
                         <div class="pItem1">
                             <h3>Go Bookstore</h3>
+                            <h5>Completed during October 2020</h5>
+                            <h5>Language: Go</h5>
                             <p>This was one of my first side projects I worked on. I recently had started learning Go and I wanted to try to use what I had learned so far to make something. I wasn't sure what to do, so I decided on recreating our Python benchmark in Go.</p>
                             <p>The way this program works is when you run the program, it asks you for the amount of new and old books you want to buy. Then, it asks if you have a coupon and what the coupon is. It then applies the coupon and gives you the final total.</p>
                         </div>
@@ -108,6 +117,8 @@
                     <div class="project">
                         <div class="pItem1">
                             <h3>Fictional Charity Page</h3>
+                            <h5>Completed during December 2020</h5>
+                            <h5>Languages: HTML/Bootstrap</h5>
                             <p>This was our benchmark for the week that we worked with Bootstrap. For this benchmark, we were supposed to create a fictional charity page using nothing but Bootstrap. This was challenging but it allowed me to see more ways of creating sites other than just custom CSS.</p>
                         </div>
                         <a class="pItem2" href="https://github.com/Shogue21/Fictional-Charity-Page" target="_blank">
@@ -119,6 +130,8 @@
                     <div class="project">
                         <div class="pItem1">
                             <h3>Go Technical Documentation</h3>
+                            <h5>Completed during December 2020</h5>
+                            <h5>Languages: HTML/CSS</h5>
                             <p>This was a site we worked on with HTML/CSS. The goal of this site was to create a technical documentation site for whatever we wanted, so I decided to do one for Go.</p>
                             <p>This was an interesting site to work on and it allowed me to show my skills with HTML and CSS.</p>
                         </div>

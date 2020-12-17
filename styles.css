@@ -1,3 +1,9 @@
+@media only screen and (min-width: 800px) {
+  #name {
+    font-size: 60px;
+  }
+}
+
 #header {
   background: #667db6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -55,6 +61,8 @@
   text-align: center;
   font-size: 15px;
   border: 1px solid black;
+  border-right: none;
+  border-left: none;
 }
 
 .item1 {
@@ -82,7 +90,7 @@
 .bItem1 {
   grid-area: skills;
   background: #d7dde8;
-  align-items: center;
+  border-bottom: none;
 }
 
 .bItem2 {
@@ -95,6 +103,8 @@
   grid-area: project;
   background: white;
   padding: 20px;
+  border-bottom: none;
+  border-left: 1px solid black;
 }
 
 .bItem4 {
@@ -102,6 +112,23 @@
   background: #d7dde8;
   font-size: 15px;
   padding: 20px;
+  border-left: 1px solid black;
+}
+
+#python {
+  list-style-image: url(https://img.icons8.com/color/20/000000/python.png);
+}
+
+#go {
+  list-style-image: url(https://img.icons8.com/color/20/000000/golang.png);
+}
+
+#html {
+  list-style-image: url(https://img.icons8.com/color/20/000000/html-5.png);
+}
+
+#css {
+  list-style-image: url(https://img.icons8.com/ultraviolet/20/000000/css.png);
 }
 
 #selfie {
@@ -136,7 +163,14 @@ a > img {
 
 #skills {
   align-self: center;
-  padding: 10px;
+  padding: 5px;
+}
+
+#skill-list {
+  list-style: square outside;
+  max-width: 8rem;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .dropdown-divider {
@@ -149,6 +183,29 @@ a > img {
   text-decoration: none;
   color: black;
   padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "email"
+    "github"
+    "linkedin";
+}
+
+#email {
+  grid-area: email;
+}
+
+#github {
+  grid-area: github;
+}
+
+#linkedin {
+  grid-area: linkedin;
+}
+
+.spacing {
+  padding: 5px;
+  max-width: 8rem;
+  margin: auto;
 }
 
 @media only screen and (max-width: 500px) {
@@ -228,7 +285,7 @@ a > img {
   }
 
   #name {
-    margin-right: 25px;
+    margin-right: 40px;
   }
   .pItem1 {
     grid-area: description;
