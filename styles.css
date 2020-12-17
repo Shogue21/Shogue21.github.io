@@ -54,7 +54,7 @@
 .grid-item {
   text-align: center;
   font-size: 15px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .item1 {
@@ -135,7 +135,6 @@ a > img {
 }
 
 #skills {
-  border-top: 2px solid black;
   align-self: center;
   padding: 10px;
 }
