@@ -129,7 +129,11 @@
 }
 
 #css {
-  list-style-image: url(https://img.icons8.com/ultraviolet/20/000000/css.png);
+  list-style-image: url(https://img.icons8.com/color/20/css3.png);
+}
+
+#django {
+  list-style-image: url(https://img.icons8.com/material/20/django.png);
 }
 
 #selfie {
