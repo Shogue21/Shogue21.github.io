@@ -92,12 +92,15 @@
   grid-area: skills;
   background: #d7dde8;
   border-bottom: none;
+  border-right: none;
+  border-top: none;
 }
 
 .bItem2 {
   grid-area: contact;
   background: #d7dde8;
   padding: 20px;
+  border-right: none;
 }
 
 .bItem3 {
@@ -105,7 +108,8 @@
   background: white;
   padding: 20px;
   border-bottom: none;
-  border-left: 1px solid black;
+  border-left: none;
+  border-top: none;
 }
 
 .bItem4 {
@@ -113,7 +117,7 @@
   background: #d7dde8;
   font-size: 15px;
   padding: 20px;
-  border-left: 1px solid black;
+  border-top: none;
 }
 
 #python {
@@ -236,11 +240,15 @@ a > img {
     grid-area: skills;
     background: #d7dde8;
     align-items: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
   }
 
   .bItem2 {
     grid-area: contact;
     background: #d7dde8;
+    border-top: none;
+    border-bottom: none;
   }
 
   .bItem3 {
@@ -252,6 +260,7 @@ a > img {
     grid-area: about-me;
     background: #d7dde8;
     font-size: 15px;
+    border-bottom: 1px solid black;
   }
 
   .project {
