@@ -140,6 +140,10 @@
   list-style-image: url(https://img.icons8.com/material/20/django.png);
 }
 
+#javascript {
+  list-style-image: url(https://img.icons8.com/color/20/000000/javascript-logo-1.png);
+}
+
 #selfie {
   width: 30%;
   height: auto;
@@ -215,6 +219,11 @@ a > img {
   padding: 5px;
   max-width: 8rem;
   margin: auto;
+}
+
+.dropdown-menu {
+  max-height: 50vh;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 500px) {
