@@ -1,3 +1,6 @@
+# OUTDATED
+This was my original portfolio that I made after my first few months of learning how to code.
+
 # My Portfolio
 This is a portfolio that displays everything I am capable of doing with software development. As of right now, it has a total of 5 different projects, 2 of them being our unit projects.
 
